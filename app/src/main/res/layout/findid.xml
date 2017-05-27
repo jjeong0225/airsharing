@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8.5"
+        android:background="#99ccff"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="390px"
+            android:layout_weight="0.09"
+            android:src="@drawable/cloud" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AIRSHARING"
+            android:textColor="#ffffff"
+            android:textSize="80px"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4.25">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="350px"
+                android:layout_marginTop="100px"
+                android:text="아이디를 잊어버리셨나요?"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="100px"
+            android:layout_weight="1.5"
+            android:background="#A6e2f1fb"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300px"
+                android:layout_marginTop="57dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름"
+                    android:textSize="70px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="246dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:hint="이름" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="phone"
+                    android:textSize="70px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="246dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:hint="핸드폰 번호" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email"
+                    android:textSize="70px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="246dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:hint="이메일" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="950px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150px"
+                android:layout_marginTop="80px"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#cbc3f5"
+                    android:text="OK"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.25"
+            android:weightSum="1">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

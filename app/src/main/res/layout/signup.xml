@@ -141,28 +141,9 @@
                     android:layout_width="246dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50px"
-                    android:hint="이메일" />
+                    android:hint="핸드폰 번호" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="300px"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="email"
-                    android:textSize = "70px"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:layout_width="246dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="50px"
-                    android:hint="이메일" />
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -202,6 +183,9 @@
                <Button
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
+                   android:background="#776f94"
+                   android:textColor = "#ffffff"
+                   android:textSize= "25dp"
                    android:text="가입하기"/>
             </LinearLayout>
 
@@ -211,4 +195,4 @@
 
     </LinearLayout>
 
-    </LinearLayout>
+</LinearLayout>

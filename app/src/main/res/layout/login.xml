@@ -10,112 +10,127 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="5"
+        android:layout_weight="6"
+        android:background="#99ccff"
         android:orientation="vertical"
         android:weightSum="1"
-        android:background="#99ccff">
+        android:id = "@+id/layout1">
 
         <ImageView
-            android:layout_width="184dp"
-            android:layout_height="112dp"
+            android:layout_width="174dp"
+            android:layout_height="102dp"
             android:layout_gravity="center"
-            android:layout_marginTop="130px"
-            android:src="@drawable/cloud"
-            android:layout_weight="0.21" />
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.21"
+            android:src="@drawable/cloud" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="AIR-SHARING"
-            android:textSize="40dp"
-            android:textStyle="bold"/>
+            android:textSize="35dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="실시간 공기 모니터링"
-            android:textSize="23dp"
             android:textColor="#ffffff"
-            android:textStyle="bold"/>
+            android:textSize="23dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="130px"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:text="LOGIN"
+            android:textColor="#451717"
             android:textSize="25dp"
-            android:textColor="#ffffff"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_weight="0.19" />
+
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="5"
-        android:orientation="vertical">
+        android:layout_weight="4">
+
 
         <EditText
             android:layout_width="246dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50px"
-            android:hint="id" />
+            android:layout_centerInParent="true"
+            android:id="@+id/id"
+            android:hint="id"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"/>
 
         <EditText
             android:layout_width="246dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50px"
-            android:hint="passwd" />
+            android:layout_marginTop = "10dp"
+            android:hint="passwd"
+            android:id = "@+id/passwd"
+            android:layout_below="@+id/id"
+            android:layout_alignLeft = "@+id/id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwd"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/normal_login"
+            android:text="아이디 비밀번호 찾기"/>
 
         <Button
             android:id="@+id/normal_login"
-            android:layout_width="300px"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="50px"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/passwd"
+            android:layout_alignRight = "@+id/passwd"
             android:background="#99ccff"
             android:text="로그인"
             android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/naver"
-            android:layout_width="600px"
-            android:layout_height="wrap_content"
+        <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+            android:id="@+id/buttonOAuthLoginImg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
             android:layout_gravity="center"
             android:layout_marginTop="10px"
-            android:text="네이버로 로그인하기"
-            android:textSize="20dp" />
+            android:layout_below="@+id/normal_login"/>
 
-        <Button
-            android:id="@+id/kakao"
-            android:layout_width="600px"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10px"
-            android:text="카카오톡으로 로그인하기"
-            android:textSize="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="130px"
-            android:layout_gravity="center"
+            android:layout_below="@+id/buttonOAuthLoginImg"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
             android:text="아직 회원이 아니신가요?"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:id = "@+id/text1"/>
 
         <Button
             android:id="@+id/signup"
             android:layout_width="400px"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10px"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="10dp"
             android:background="#e6dbff"
-            android:textColor="#ffffff"
             android:text="Register!"
+            android:textColor="#ffffff"
             android:textSize="20dp" />
-    </LinearLayout>
+
+    </RelativeLayout>
+
 </LinearLayout>

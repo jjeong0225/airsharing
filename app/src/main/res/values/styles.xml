@@ -7,7 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name = "windowNoTitle">false</item>  <!--어플 타이틀 제거-->
+        <item name = "windowNoTitle">true</item>  <!--어플 타이틀 제거-->
     </style>
 
 </resources>
