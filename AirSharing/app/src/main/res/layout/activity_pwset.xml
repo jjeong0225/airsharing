@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:background="#99ccff"
+        android:weightSum="1" >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="100px"
+            android:layout_height="30dp"
+            android:layout_marginLeft="390px"
+            android:src="@drawable/cloud"
+            android:layout_weight="0.09" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AIRSHARING"
+            android:textSize="80px"
+            android:textColor = "#ffffff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="변경할 비밀번호를 입력하세요"
+                android:textSize="80px"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:layout_marginTop="100px"
+                android:layout_width="900px"
+                android:layout_height="wrap_content"
+                android:id="@+id/pw1"
+                android:inputType="textPassword"
+                android:hint="비밀번호를 입력해주세요"/>
+
+            <EditText
+                android:layout_marginTop="100px"
+                android:layout_width="900px"
+                android:layout_height="wrap_content"
+                android:id="@+id/pw2"
+                android:inputType="textPassword"
+                android:hint="다시 한번 입력해주세요."/>
+
+            <Button
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200px"
+                android:id="@+id/pw_btn"
+                android:background="@drawable/button3"
+                android:text="변경하기"
+                android:textColor="#ffffff"
+                android:textSize="80px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
